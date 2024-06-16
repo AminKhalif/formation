@@ -24,8 +24,9 @@ Spacetime -> O(n)
 
 Approach #2
 
-Create a Dictionary skill_map :
-    It will be structured as  => skill : skill_frequency (key: skill , value: skill_frequency => interger for number of times the skill appears)
+Create a Dictionary skill_freq_map :
+    It will be structured as  => skill : skill_frequency
+     (key: skill => (string of the skill) , value: skill_frequency => (interger for number of times the skill appears)
 
 Iterate through input dictionary (skillMap)
 

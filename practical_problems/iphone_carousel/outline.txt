@@ -1,0 +1,20 @@
+Approach:
+
+Create var:
+     current_index to keep track of current_index
+
+Create arr :
+    opened_apps to store apps opened     
+
+Iterate through commands:
+    If command is out of bounds in apps:
+        reset the current_index
+
+    If command == scroll up:
+        current_index +1 
+
+    Else-If command == scroll down:
+        current_index - 1
+
+
+    Return opened_apps
