@@ -1,0 +1,48 @@
+Approach #1
+
+Create a list  (skills_list)
+    - The list will track all skill levels & how often they appear
+
+Create a set (skills_set):
+    - Stores unique values from each value in skills_list
+
+Iterate through Dictionary's values to update skills_list 
+
+Check number of appearances for each skill in skill_list from skill_set:
+    - If a skill_frequency in the skill_list is odd :
+         - then that skill does not have matching pair , Return False
+    - Else:
+        Return True  (If it's even it has matching pairs then)   
+
+Runtime -> O(n)
+    O(n+k) n=dictionary length, k = skill_set length -> O(n)
+
+Spacetime -> O(n) 
+    O(n+ k) , n = array (skills_list) , k= set (skills_set) -> O(n)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Approach #2
+
+Create a Dictionary skill_map :
+    It will be structured as  => skill : skill_frequency (key: skill , value: skill_frequency => interger for number of times the skill appears)
+
+Iterate through input dictionary (skillMap)
+
+    If the skill is not in our skill_map:
+      - Assign that skill a new value of  => current_skill : 0
+    
+    Else:
+        skill_frequency+1 (The skill appeared again so we add +1 to that skill's frequency in our map)
+
+    Iterate through each frequency value in our skill_map:
+        If a skill_frequency is odd, Return False  ( there is no matching pairs if its odd)
+
+        Else:
+            return True
+
+Runtime -> O(n)
+     n = dictionary length
+
+Spacetime -> O(n)
+     n = dictionary  (skills_map)
