@@ -1,0 +1,14 @@
+
+Approach:
+
+Create a helper function that removes commands from the string:
+    
+Create a dictionary => directory_map
+    - dir_name : [files] => (key: name of directory, values: files contained in dir)
+
+Loop through commands and parse the str for the different commands
+
+
+
+
+
